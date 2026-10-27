@@ -34,13 +34,14 @@ jobs:
           gradle-version: '9.6.0'
 
       - name: Build mod
+        working-directory: wildercreatures-github/wildercreatures
         run: gradle build --no-daemon
 
       - name: Upload mod JAR
         uses: actions/upload-artifact@v4
         with:
           name: wilder-creatures-jar
-          path: build/libs/*.jar
+          path: wildercreatures-github/wildercreatures/build/libs/*.jar
           if-no-files-found: error
           retention-days: 14
 ```
