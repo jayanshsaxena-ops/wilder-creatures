@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "wildercreatures",
+  "version": "${version}",
+  "name": "Wilder Creatures",
+  "description": "Adds immersive, high-quality wild animals inspired by Untamed Wilds. Currently features a predatory Jaguar.",
+  "authors": [
+    "You"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yourname/wildercreatures",
+    "sources": "https://github.com/yourname/wildercreatures"
+  },
+  "license": "MIT",
+  "icon": "assets/wildercreatures/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.wildercreatures.WilderCreatures"
+    ],
+    "client": [
+      "com.wildercreatures.client.WilderCreaturesClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*",
+    "geckolib": ">=5.5.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
